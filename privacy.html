@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unplugged Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Privacy Policy for the Unplugged Arcade: 59 Games mobile app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: a formal single-column legal document. Header with app identity and dates, a summary box, a table of contents, then numbered clauses. */
+:root {
+  --bg: #F7F6FA;
+  --surface: #FFFFFF;
+  --fg: #1C1729;
+  --muted: #5D5670;
+  --line: #E1DDEA;
+  --accent: #A9660A;
+  --mint: #0C8A71;
+  --display: "Lilita One", "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+  --body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16121E; --surface: #211B2C; --fg: #EFEBF6; --muted: #AAA2BE;
+    --line: #352D44; --accent: #FFC233; --mint: #3BD9B4; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #16121E; --surface: #211B2C; --fg: #EFEBF6; --muted: #AAA2BE;
+  --line: #352D44; --accent: #FFC233; --mint: #3BD9B4; color-scheme: dark;
+}
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--body); font-size: 16px; line-height: 1.7;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 44px 72px;
+}
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.pp-wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px; }
+.pp-head { display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+.pp-app { font-family: var(--display); font-size: 15px; letter-spacing: 1.5px; color: var(--accent); text-transform: uppercase; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 7vw, 46px); line-height: 1.08; margin: 0; text-wrap: balance; }
+.pp-dates { display: flex; flex-wrap: wrap; gap: 4px 24px; color: var(--muted); font-size: 14px; margin: 0; font-variant-numeric: tabular-nums; }
+.pp-dates b { color: var(--fg); font-weight: 700; }
+.pp-intro { margin: 0; max-width: 65ch; }
+.pp-summary { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; }
+.pp-summary h2, .pp-toc h2 { margin: 0; font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); font-weight: 800; }
+.pp-summary ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.pp-summary li { display: flex; gap: 10px; align-items: baseline; font-weight: 700; }
+.pp-summary li::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--mint); transform: translateY(-1px); }
+.pp-summary p { margin: 0; color: var(--muted); font-size: 14px; }
+.pp-toc { display: flex; flex-direction: column; gap: 10px; }
+.pp-toc ol { margin: 0; padding-left: 22px; columns: 2 240px; column-gap: 32px; }
+.pp-toc li { break-inside: avoid; padding-block: 2px; }
+.pp-toc a { color: var(--fg); text-decoration: none; }
+.pp-toc a:hover { color: var(--accent); text-decoration: underline; }
+.pp-clauses { display: flex; flex-direction: column; gap: 30px; counter-reset: clause; }
+.pp-clauses section { display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 20px; }
+.pp-clauses h2 { font-family: var(--display); font-weight: 400; font-size: 23px; line-height: 1.25; margin: 0; letter-spacing: .3px; text-wrap: balance; display: flex; gap: 12px; }
+.pp-clauses h2 span { color: var(--accent); font-variant-numeric: tabular-nums; min-width: 1.6em; }
+.pp-clauses p, .pp-clauses ul { margin: 0; max-width: 65ch; }
+.pp-clauses ul { padding-left: 20px; display: grid; gap: 6px; }
+.pp-clauses h3 { margin: 4px 0 0; font-size: 16px; font-weight: 800; }
+.pp-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+th { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); font-weight: 800; }
+tr:last-child td { border-bottom: 0; }
+.pp-contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; max-width: 65ch; }
+.pp-contact dt { color: var(--muted); font-weight: 700; }
+.pp-contact dd { margin: 0; font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+.pp-contact .pp-sel { user-select: all; }
+footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: space-between; }
+@media (max-width: 420px) { .pp-contact { grid-template-columns: 1fr; gap: 2px; } .pp-contact dd { margin-bottom: 8px; } }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+<main class="pp-wrap">
+  <header class="pp-head">
+    <a class="pp-app" href="./" style="text-decoration:none">Unplugged Arcade: 59 Games</a>
+    <h1>Privacy Policy</h1>
+    <p class="pp-dates"><span>Effective date: <b>15 November 2026</b></span><span>Last updated: <b>24 November 2026</b></span></p>
+    <p class="pp-intro">This Privacy Policy describes how Sourabh Takshak ("we", "us", "our") handles information in connection with the Unplugged Arcade: 59 Games mobile application for iOS, iPadOS and Android (the "App"). By downloading or using the App, you acknowledge that you have read and understood this Privacy Policy.</p>
+  </header>
+
+  <aside class="pp-summary" aria-label="Summary">
+    <h2>Summary</h2>
+    <ul>
+      <li>We do not collect your name, email or contacts, and we never see your payment details.</li>
+      <li>The App has no accounts, no sign-in and no registration.</li>
+      <li>The free App shows ads from Google AdMob between games, only when you are online. You can remove them with a one-time purchase.</li>
+      <li>Ads are personalised only if you allow it (Apple's tracking question and, in the EU/UK, Google's consent form). You can change this at any time.</li>
+      <li>Every game works offline. When you are online, the App sends anonymous error and play reports so we can fix bugs.</li>
+      <li>Game progress is stored only on your device and never leaves it.</li>
+    </ul>
+    <p>This summary is provided for convenience. The full policy below governs.</p>
+  </aside>
+
+  <nav class="pp-toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#about">About this policy</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#device">Data stored on your device</a></li>
+      <li><a href="#network">Network access and third parties</a></li>
+      <li><a href="#ads">Advertising, analytics and tracking</a></li>
+      <li><a href="#permissions">Device permissions</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Data security and retention</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#platforms">App stores and beta testing</a></li>
+      <li><a href="#international">International users</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#support">Support</a></li>
+    </ol>
+  </nav>
+
+  <div class="pp-clauses">
+    <section id="about">
+      <h2><span>1.</span>About this policy</h2>
+      <p>The App is a collection of single-device puzzle, board, card and arcade games published by Sourabh Takshak, an individual developer based in Delhi, India. We designed the App so that it does not need any information about you in order to work. This policy explains that design in detail and applies to all versions of the App distributed through the Apple App Store, Apple TestFlight and Google Play.</p>
+      <p>In this policy, "personal data" means any information relating to an identified or identifiable natural person, as defined under applicable data protection laws.</p>
+    </section>
+
+    <section id="collect">
+      <h2><span>2.</span>Information we collect</h2>
+      <p>We do not collect any personal data. Specifically, the App does not request, collect or receive:</p>
+      <ul>
+        <li>your name, email address, phone number or postal address;</li>
+        <li>account credentials, user IDs or social media profiles;</li>
+        <li>device identifiers, except that our advertising partner Google may use your device's advertising identifier (IDFA or GAID) if you allow it, as described in section 5;</li>
+        <li>precise or approximate location;</li>
+        <li>contacts, photos, files, audio or camera data;</li>
+        <li>any usage data or gameplay statistics other than the anonymous reports described in section 4;</li>
+        <li>payment or financial information. The optional "Remove Ads" purchase is handled entirely by Apple or Google; we only learn that it was bought.</li>
+      </ul>
+      <p>The only information that leaves your device is the anonymous error and play reports described in section 4. Separately, the advertising SDK described in section 5 collects data for Google. All of this is declared in the App Store's privacy disclosure.</p>
+    </section>
+
+    <section id="device">
+      <h2><span>3.</span>Data stored on your device</h2>
+      <p>To let you continue where you left off, the App saves a small amount of game data in your device's local app storage. This data is created by the App, stays on your device and is never sent to us or to anyone else.</p>
+      <div class="pp-table-wrap">
+        <table>
+          <thead><tr><th>Data</th><th>Purpose</th><th>Where it is kept</th></tr></thead>
+          <tbody>
+            <tr><td>Levels reached, best scores and coins</td><td>Show your progress and records</td><td>On your device only</td></tr>
+            <tr><td>Daily challenge streak and missions</td><td>Track daily goals and rewards</td><td>On your device only</td></tr>
+            <tr><td>Settings (sound, vibration, difficulty, game mode)</td><td>Remember your preferences</td><td>On your device only</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>This data does not identify you and we have no access to it. If you have enabled device backups (such as iCloud Backup or Google One backup), the operating system may include the App's storage in your backup. Those backups are managed by Apple or Google under their own privacy policies.</p>
+    </section>
+
+    <section id="network">
+      <h2><span>4.</span>Network access and third parties</h2>
+      <p>All games, including matches against a computer opponent ("bot"), run locally on your device and work without an internet connection. We do not run our own servers.</p>
+      <h3>Error and play reports</h3>
+      <p>To find and fix bugs and to see which games and levels need work, the App sends short anonymous reports when your device is online. We built this reporting ourselves; it uses no third-party analytics or advertising SDK. A report can contain:</p>
+      <ul>
+        <li>technical details of an error (the error message and the part of the program where it happened);</li>
+        <li>for each finished game: the game, difficulty, level, game mode, whether you won, and the score;</li>
+        <li>that the App was opened, the app version, the platform (iOS, Android or web), the operating-system version and the screen size;</li>
+        <li>a random code that is created when the App starts and forgotten when it closes, so reports from one session can be grouped. It is not stored and is different every time.</li>
+      </ul>
+      <p>Reports never include your name, email, location, contacts, an advertising identifier, a device or installation identifier, or anything you type. They cannot be used to identify you or to follow you across apps. While you are offline, reports wait on your device (at most 80) and are sent later.</p>
+      <p>Reports are stored in a Google Sheets spreadsheet that only we can access, using Google Workspace as a storage service under Google's terms. They are kept for 90 days and then deleted automatically. We use them only to fix and improve the App. We do not sell, rent, trade or otherwise share any information with third parties.</p>
+    </section>
+
+    <section id="ads">
+      <h2><span>5.</span>Advertising, analytics and tracking</h2>
+      <p>The App is free and is paid for by ads from <b>Google AdMob</b> (Google LLC / Google Ireland Ltd). How we use ads:</p>
+      <ul>
+        <li>Ads appear only <b>between games</b>, never during one, only when your device is online, and never in your first session. Short full-screen ads are limited in how often they appear.</li>
+        <li>Optional video ads give you free coins or double your coins. You choose to watch them.</li>
+        <li>The one-time <b>Remove Ads</b> purchase turns off the between-game ads for good. Optional coin videos stay available.</li>
+      </ul>
+      <p>To show and measure ads, the Google Mobile Ads SDK may collect: your device's advertising identifier (only if you allow tracking), IP address and the approximate location derived from it, device and app information, and how you interact with ads. Google uses this as described in its <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps</a> page and its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+      <h3>Your choices</h3>
+      <ul>
+        <li><b>On iPhone and iPad</b>, the App asks Apple's "Allow tracking?" question. If you choose "Ask App Not to Track", ads are not personalised with your advertising identifier. You can change this in Settings → Privacy &amp; Security → Tracking.</li>
+        <li><b>In the EU, UK and Switzerland</b>, Google's consent form lets you accept or refuse personalised ads. You can reopen it at any time from the App's Settings → "Ad privacy choices".</li>
+        <li>You can also reset or limit your advertising identifier in your device settings.</li>
+      </ul>
+      <p>Apart from the ads and the anonymous reports in section 4, nothing about your play is sent anywhere. We do not sell your personal data. If we change how ads work, we will update this policy first.</p>
+    </section>
+
+    <section id="permissions">
+      <h2><span>6.</span>Device permissions</h2>
+      <p>The App does not request access to your camera, microphone, location, contacts, photo library, calendar, Bluetooth or local network. The App uses your device's vibration motor to provide short haptic feedback during play. This does not require a permission and can be switched off in the App's settings.</p>
+    </section>
+
+    <section id="children">
+      <h2><span>7.</span>Children's privacy</h2>
+      <p>The App is a general-audience game and is not directed at children under 13. Ads are requested with Google's "General audiences" content rating, so only ads suitable for all ages should appear. We do not knowingly collect personal data from children. Parents or guardians with questions may contact us using the details in section 13.</p>
+    </section>
+
+    <section id="security">
+      <h2><span>8.</span>Data security and retention</h2>
+      <p>We do not hold personal data. Anonymous error and play reports are kept for 90 days and then deleted automatically. Game data on your device is protected by your device's own security features, such as its passcode and encryption. It is kept until you delete the App, which permanently removes it from your device.</p>
+    </section>
+
+    <section id="rights">
+      <h2><span>9.</span>Your rights</h2>
+      <p>Depending on where you live, laws such as the EU and UK General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA) and India's Digital Personal Data Protection Act, 2023 give you rights over your personal data, including the rights to access, correct, delete or port it and to object to its processing.</p>
+      <p>We do not hold data that identifies you, so there is nothing for us to access, correct or delete. For data collected by Google for advertising, you can use your device's privacy settings, the App's "Ad privacy choices", or Google's own tools. You remain in full control of the game data on your device and can erase it at any time by deleting the App. If you have any question about your rights, please contact us and we will respond within 30 days.</p>
+    </section>
+
+    <section id="platforms">
+      <h2><span>10.</span>App stores and beta testing</h2>
+      <p>When you download the App, the app store you use (Apple App Store or Google Play) may collect information about your download and device under its own privacy policy. We do not receive personal data about you from these stores.</p>
+      <p>If you take part in pre-release testing through Apple TestFlight, Apple may make available to us your name and email address (if you were invited by email), device and operating-system details, crash reports and any feedback or screenshots you choose to submit, as described in Apple's TestFlight terms. We use this information only to test and improve the App, do not share it with anyone else, and stop using it when the beta test ends.</p>
+    </section>
+
+    <section id="international">
+      <h2><span>11.</span>International users</h2>
+      <p>The App is available in many countries. No personal data is transferred from your device. The anonymous reports are stored on Google servers, which may be outside your country.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span>12.</span>Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time, for example if we add new features. When we do, we will revise the "Last updated" date at the top of this page. If a future version of the App begins to collect personal data, we will update this policy and, where required by law, ask for your consent before that version collects any data.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span>13.</span>Contact us</h2>
+      <p>If you have any questions, concerns or requests about this Privacy Policy, please contact:</p>
+      <dl class="pp-contact">
+        <dt>Developer</dt><dd>Sourabh Takshak</dd>
+        <dt>App</dt><dd>Unplugged Arcade: 59 Games</dd>
+        <dt>Email</dt><dd class="pp-sel">dhirajraj12237@gmail.com</dd>
+        <dt>Location</dt><dd>Delhi, India</dd>
+      </dl>
+    </section>
+
+    <section id="support">
+      <h2><span>14.</span>Support</h2>
+      <p>Need help with a game, found a bug, or have an idea? Email us at the address above. Please include your device model and the game, difficulty and level. We usually reply within 2 days.</p>
+      <ul>
+        <li><b>Progress lost after reinstalling?</b> Game progress is stored on your device, so deleting the App removes it.</li>
+        <li><b>No sound?</b> Check the silent switch and the sound toggle in the App's settings.</li>
+        <li><b>A level feels too hard?</b> Every game has Easy, Medium, Hard and Extreme, chosen on the game's start screen.</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer><span>© 2026 Sourabh Takshak. All rights reserved.</span><span>Unplugged Arcade: 59 Games</span></footer>
+</main>
